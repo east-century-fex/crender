@@ -1,9 +1,9 @@
 <h1 align="center">CRender</h1>
 
 <p align="center">
-    <a href="https://travis-ci.com/jiaming743/CRender"><img src="https://img.shields.io/travis/com/jiaming743/CRender.svg" alt="Travis CI"></a>
-    <a href="https://github.com/jiaming743/CRender/blob/master/LICENSE"><img src="https://img.shields.io/github/license/jiaming743/CRender.svg" alt="LICENSE" /></a>
-    <a href="https://www.npmjs.com/package/@jiaminghi/c-render"><img src="https://img.shields.io/npm/v/@jiaminghi/c-render.svg" alt="version" /></a>
+    <a href="https://travis-ci.com/east-century-fex/CRender"><img src="https://img.shields.io/travis/com/east-century-fex/CRender.svg" alt="Travis CI"></a>
+    <a href="https://github.com/east-century-fex/crender/blob/master/LICENSE"><img src="https://img.shields.io/github/license/jiaming743/CRender.svg" alt="LICENSE" /></a>
+    <a href="https://www.npmjs.com/package/@east-century/c-render"><img src="https://img.shields.io/npm/v/@east-century/c-render.svg" alt="version" /></a>
 </p>
 
 ### CRender是干什么的?
@@ -14,24 +14,24 @@
 ### npm安装
 
 ```shell
-$ npm install @jiaminghi/c-render
+$ npm install @east-century/crender
 ```
 
 ### 快速体验
 
 ```html
-<!--资源位于个人服务器仅供体验和测试，请勿在生产环境使用-->
+<!--资源位于github服务器仅供体验和测试，请勿在生产环境使用-->
 <!--调试版-->
-<script src="http://lib.jiaminghi.com/crender/crender.map.js"></script>
+<script src="https://github.com/east-century-fex/crender/tree/master/dist/crender.map.js"></script>
 <!--压缩版-->
-<script src="http://lib.jiaminghi.com/crender/crender.min.js"></script>
+<script src="https://github.com/east-century-fex/crender/tree/master/dist/crender.min.js"></script>
 <script>
   const { CRender, extendNewGraph } = window.CRender
   // do something
 </script>
 ```
 
-详细文档及示例请移步[HomePage](http://crender.jiaminghi.com).
+详细文档及示例请移步[HomePage](https://eastcenturyfe.github.io/crender-document-code).
 
 - [使用](#使用)
 - [Class CRender](#class-crender)
@@ -46,7 +46,7 @@ $ npm install @jiaminghi/c-render
 <h3 align="center">使用</h3>
 
 ```javascript
-import CRender from '@jiaminghi/c-redner'
+import CRender from '@east-century/credner'
 
 const canvas = document.getElementById('canvas')
 
@@ -1750,7 +1750,7 @@ const text = render.add(textConfig)
 CRender提供了一个方法去扩展新的图形，你可以**自定义**想要的图形。
 
 ```javascript
-import { extendNewGraph } from '@jiaminghi/c-render'
+import { extendNewGraph } from '@east-century/crender'
 
 const graphName = 'newGraph'
 const graphConfig = {
@@ -1898,7 +1898,7 @@ config = {
 #### 扩展示例
 
 ```javascript
-import { extendNewGraph } from '@jiaminghi/c-render'
+import { extendNewGraph } from '@east-century/crender'
 
 const circle = {
   shape: {
@@ -1957,16 +1957,16 @@ extendNewGraph('circle', circle)
 
 <h3 align="center">相关支持</h3>
 
-- [Transition](https://github.com/jiaming743/transition)
+- [Transition](https://eastcenturyfe.github.io/transition-document-code)
 
   提供动画过渡数据 (animationCurve)。
 
-  如果你想扩展新的缓动曲线，请移步 [扩展新曲线](http://transition.jiaminghi.com/guide/#扩展缓动曲线).
+  如果你想扩展新的缓动曲线，请移步 [扩展新曲线](https://eastcenturyfe.github.io/transition-document-code/guide/#扩展缓动曲线).
 
-- [BezierCurve](https://github.com/jiaming743/bezierCurve)
+- [BezierCurve](https://github.com/east-century-fex/beziercurve)
 
   提供贝塞尔曲线支持，例如计算曲线长度，曲线折线互转。
 
-- [Color](https://github.com/jiaming743/Color)
+- [Color](https://github.com/east-century-fex/color)
 
   提供了颜色计算，例如获取颜色的rgba值，以便于颜色动画状态的计算。
