@@ -40,7 +40,7 @@
     "@jiaminghi/fs": "0.0.2",
     "chai": "^4.2.0",
     "ftp": "^0.3.10",
-    "mocha": "^6.1.4",
+    "mocha": "^10.2.0",
     "browserify": "^16.5.0",
     "uglifyjs": "^2.4.11"
   }
